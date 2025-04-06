@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebook Premium - Business IA Sans Compétences et Sans Budget</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/monetisation.css">
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Business IA</h1>
+            <p>Sans Compétences et Sans Budget</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="idees.html">Idées Business</a></li>
+                <li><a href="faisabilite.html">Analyse de Faisabilité</a></li>
+                <li><a href="ressources.html">Ressources Gratuites</a></li>
+                <li><a href="strategies.html">Stratégies</a></li>
+                <li><a href="outils-recommandes.html">Outils Recommandés</a></li>
+                <li class="active"><a href="ebook-premium.html">Ebook Premium</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="ebook-premium-page">
+        <section class="hero">
+            <div class="container">
+                <h1>Guide Complet: Business IA Sans Compétences et Sans Budget</h1>
+                <p class="subtitle">Transformez l'intelligence artificielle en source de revenus sans connaissances techniques</p>
+                <div class="ebook-cover">
+                    <img src="images/ebook-cover.png" alt="Couverture de l'ebook Business IA Sans Compétences et Sans Budget" onerror="this.src='https://via.placeholder.com/300x400/1a73e8/ffffff?text=Business+IA'">
+                </div>
+            </div>
+        </section>
+
+        <section class="ebook-details">
+            <div class="container">
+                <div class="price-box">
+                    <div class="price">29€</div>
+                    <div class="guarantee">Garantie satisfait ou remboursé pendant 30 jours</div>
+                </div>
+
+                <div class="benefits">
+                    <h2>Ce que vous allez découvrir dans cet ebook</h2>
+                    <ul>
+                        <li><strong>7 idées de business IA</strong> que vous pouvez démarrer aujourd'hui sans compétences techniques</li>
+                        <li><strong>Analyse détaillée de la faisabilité</strong> de chaque idée avec estimation des revenus potentiels</li>
+                        <li><strong>Plus de 50 outils IA gratuits</strong> pour créer votre business sans investissement initial</li>
+                        <li><strong>Plans d'action détaillés</strong> pour les 5 idées les plus prometteuses</li>
+                        <li><strong>Stratégies de monétisation</strong> pour générer des revenus dès le premier mois</li>
+                        <li><strong>Études de cas réels</strong> d'entrepreneurs qui ont réussi sans compétences techniques</li>
+                        <li><strong>Bibliothèque de prompts IA</strong> pour entrepreneurs (valeur 97€)</li>
+                        <li><strong>Templates et frameworks</strong> prêts à l'emploi pour démarrer rapidement</li>
+                    </ul>
+                </div>
+
+                <div class="payment-options">
+                    <h2>Choisissez votre méthode de paiement</h2>
+                    <div class="payment-buttons">
+                        <div id="paypal-button-container"></div>
+                        <button id="stripe-button-container" class="stripe-button">
+                            <span>Payer avec Carte Bancaire</span>
+                        </button>
+                    </div>
+                    <div id="confirmation-message" style="display: none;" class="message success"></div>
+                    <div id="error-message" style="display: none;" class="message error"></div>
+                    <div id="loading-message" style="display: none;" class="message info"></div>
+                </div>
+
+                <div class="table-of-contents">
+                    <h2>Table des matières</h2>
+                    <ol>
+                        <li>Introduction: L'opportunité de l'IA pour les entrepreneurs sans compétences techniques</li>
+                        <li>Idées de Business IA: 7 concepts validés que vous pouvez démarrer sans budget</li>
+                        <li>Analyse de Faisabilité: Évaluation détaillée de chaque idée</li>
+                        <li>Ressources Gratuites: Les meilleurs outils IA sans coût</li>
+                        <li>Stratégies de Mise en Œuvre: Plans d'action étape par étape</li>
+                        <li>Monétisation et Évolution: Comment générer des revenus et faire évoluer votre business</li>
+                        <li>Études de Cas: Exemples réels d'entrepreneurs qui ont réussi</li>
+                        <li>Ressources Exclusives: Prompts, templates et frameworks</li>
+                    </ol>
+                </div>
+
+                <div class="testimonials">
+                    <h2>Ce que disent nos lecteurs</h2>
+                    <div class="testimonial">
+                        <p>"J'ai démarré mon business de rédaction optimisée par IA sans aucune connaissance technique. En suivant le plan d'action de ce guide, j'ai généré 750€ dès mon premier mois."</p>
+                        <div class="author">Sophie M., Rédactrice IA</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Les prompts IA fournis dans l'ebook valent à eux seuls bien plus que le prix demandé. Ils m'ont fait gagner des dizaines d'heures de travail."</p>
+                        <div class="author">Thomas L., Consultant Marketing</div>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Guide extrêmement pratique qui m'a permis de lancer mon service de création de visuels par IA sans investissement initial. Merci pour ces ressources précieuses!"</p>
+                        <div class="author">Julie D., Designer IA</div>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <h2>Questions fréquentes</h2>
+                    <div class="question">
+                        <h3>Ai-je besoin de compétences techniques pour appliquer les stratégies de cet ebook?</h3>
+                        <p>Non, absolument pas. Ce guide a été spécialement conçu pour les personnes sans compétences techniques. Toutes les étapes sont expliquées de manière simple et accessible.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Comment vais-je recevoir l'ebook après mon achat?</h3>
+                        <p>Immédiatement après votre achat, vous recevrez un email contenant un lien de téléchargement pour accéder à l'ebook au format PDF.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Que contient exactement la bibliothèque de prompts IA?</h3>
+                        <p>La bibliothèque contient plus de 100 prompts optimisés pour différentes tâches entrepreneuriales: création de contenu, marketing, vente, productivité, développement personnel et professionnel.</p>
+                    </div>
+                    <div class="question">
+                        <h3>Quelle est votre politique de remboursement?</h3>
+                        <p>Nous offrons une garantie satisfait ou remboursé de 30 jours. Si vous n'êtes pas satisfait de l'ebook, contactez-nous et nous vous rembourserons intégralement.</p>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <h2>Prêt à transformer l'IA en source de revenus?</h2>
+                    <p>Obtenez votre guide complet dès maintenant et commencez votre business IA sans compétences techniques et sans budget!</p>
+                    <div class="payment-buttons">
+                        <div id="paypal-button-container-bottom"></div>
+                        <button id="stripe-button-container-bottom" class="stripe-button">
+                            <span>Payer avec Carte Bancaire</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Business IA</h3>
+                    <p>Des solutions innovantes pour créer votre business basé sur l'intelligence artificielle sans compétences techniques et sans budget initial.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="idees.html">Idées Business</a></li>
+                        <li><a href="faisabilite.html">Analyse de Faisabilité</a></li>
+                        <li><a href="ressources.html">Ressources Gratuites</a></li>
+                        <li><a href="strategies.html">Stratégies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Recevez nos conseils et astuces pour réussir avec l'IA</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Business IA Sans Compétences et Sans Budget. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/paypal-integration.js"></script>
+    <script src="js/stripe-integration.js"></script>
+    <script>
+        // Initialiser les boutons de paiement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialiser PayPal
+            initPayPalButton();
+            
+            // Initialiser Stripe
+            initStripeButton();
+            
+            // Configurer les boutons du bas de page pour qu'ils fassent défiler vers les boutons du haut
+            document.getElementById('stripe-button-container-bottom').addEventListener('click', function() {
+                document.getElementById('stripe-button-container').click();
+            });
+            
+            // Dupliquer le bouton PayPal en bas
+            document.getElementById('paypal-button-container-bottom').innerHTML = document.getElementById('paypal-button-container').innerHTML;
+        });
+    </script>
+</body>
+</html>

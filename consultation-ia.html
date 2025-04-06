@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation IA - Business IA Sans Compétences et Sans Budget</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/monetisation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Business IA</h1>
+            <p>Sans Compétences et Sans Budget</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="idees.html">Idées Business</a></li>
+                <li><a href="faisabilite.html">Analyse de Faisabilité</a></li>
+                <li><a href="ressources.html">Ressources Gratuites</a></li>
+                <li><a href="strategies.html">Stratégies</a></li>
+                <li><a href="outils-recommandes.html">Outils Recommandés</a></li>
+                <li><a href="ebook-premium.html">Ebook Premium</a></li>
+                <li class="active"><a href="consultation-ia.html">Consultation IA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="consultation-page">
+        <section class="hero">
+            <div class="container">
+                <h1>Consultation Personnalisée par Agent IA</h1>
+                <p class="subtitle">Obtenez des conseils sur mesure pour votre projet de business IA sans rendez-vous vidéo</p>
+                <div class="ai-assistant-image">
+                    <img src="images/ai-assistant.png" alt="Agent IA pour consultation" onerror="this.src='https://via.placeholder.com/300x300/1a73e8/ffffff?text=Agent+IA'">
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation-details">
+            <div class="container">
+                <div class="service-tiers">
+                    <h2>Nos Services de Consultation</h2>
+                    
+                    <div class="tier-cards">
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <h3>Audit Express</h3>
+                                <div class="price">49€</div>
+                            </div>
+                            <div class="tier-features">
+                                <ul>
+                                    <li>Analyse de votre idée de business IA</li>
+                                    <li>Évaluation de faisabilité personnalisée</li>
+                                    <li>Recommandations d'outils IA adaptés</li>
+                                    <li>Rapport écrit détaillé (5-7 pages)</li>
+                                    <li>Délai de livraison: 48h</li>
+                                </ul>
+                            </div>
+                            <button class="tier-button" data-tier="express">Commander</button>
+                        </div>
+                        
+                        <div class="tier-card featured">
+                            <div class="tier-header">
+                                <h3>Plan d'Action Complet</h3>
+                                <div class="price">99€</div>
+                                <div class="popular-tag">Le plus demandé</div>
+                            </div>
+                            <div class="tier-features">
+                                <ul>
+                                    <li>Tout ce qui est inclus dans l'Audit Express</li>
+                                    <li>Plan d'action détaillé en 10 étapes</li>
+                                    <li>Analyse de marché et concurrence</li>
+                                    <li>Stratégie de monétisation personnalisée</li>
+                                    <li>Prompts IA optimisés pour votre projet</li>
+                                    <li>Suivi par email pendant 7 jours</li>
+                                    <li>Délai de livraison: 5 jours</li>
+                                </ul>
+                            </div>
+                            <button class="tier-button" data-tier="complet">Commander</button>
+                        </div>
+                        
+                        <div class="tier-card">
+                            <div class="tier-header">
+                                <h3>Accompagnement Premium</h3>
+                                <div class="price">199€</div>
+                            </div>
+                            <div class="tier-features">
+                                <ul>
+                                    <li>Tout ce qui est inclus dans le Plan d'Action</li>
+                                    <li>Analyse approfondie de votre projet</li>
+                                    <li>Stratégie marketing complète</li>
+                                    <li>Templates et frameworks personnalisés</li>
+                                    <li>Bibliothèque de prompts IA spécifiques</li>
+                                    <li>Suivi par email pendant 30 jours</li>
+                                    <li>2 révisions du plan d'action</li>
+                                    <li>Délai de livraison: 7 jours</li>
+                                </ul>
+                            </div>
+                            <button class="tier-button" data-tier="premium">Commander</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="how-it-works">
+                    <h2>Comment ça fonctionne?</h2>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Choisissez votre formule</h3>
+                            <p>Sélectionnez le service qui correspond le mieux à vos besoins et à votre budget.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Remplissez le questionnaire</h3>
+                            <p>Après votre paiement, vous recevrez un questionnaire détaillé pour nous permettre de comprendre votre projet.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Notre agent IA analyse votre projet</h3>
+                            <p>Notre système d'intelligence artificielle avancé analyse votre projet et prépare des recommandations personnalisées.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Recevez votre consultation</h3>
+                            <p>Vous recevez votre rapport détaillé par email dans le délai indiqué, sans avoir besoin de participer à des appels vidéo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="consultation-form" class="consultation-form" style="display: none;">
+                    <h2>Commandez votre consultation</h2>
+                    <div id="selected-tier-info"></div>
+                    
+                    <form id="payment-form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Votre adresse email">
+                        </div>
+                        
+                        <div class="payment-options">
+                            <h3>Choisissez votre méthode de paiement</h3>
+                            <div class="payment-buttons">
+                                <div id="paypal-button-container-consultation"></div>
+                                <button type="button" id="stripe-button-container-consultation" class="stripe-button">
+                                    <span>Payer avec Carte Bancaire</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="back-button">
+                        <button id="back-to-tiers">Retour aux formules</button>
+                    </div>
+                </div>
+
+                <div class="testimonials">
+                    <h2>Ce que disent nos clients</h2>
+                    
+                    <div class="testimonial-cards">
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"L'analyse de mon projet par l'agent IA était incroyablement détaillée et pertinente. Les recommandations étaient parfaitement adaptées à mon niveau technique (débutant) et à mon budget limité. J'ai pu lancer mon service de rédaction IA en seulement 2 semaines!"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-name">Marie L.</div>
+                                <div class="author-business">Rédactrice IA</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Le Plan d'Action Complet m'a fourni exactement ce dont j'avais besoin pour démarrer. Les prompts IA personnalisés ont été particulièrement utiles et m'ont fait gagner des dizaines d'heures de recherche. Le suivi par email a répondu à toutes mes questions sans avoir besoin d'appels vidéo."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-name">Thomas D.</div>
+                                <div class="author-business">Consultant Marketing IA</div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"J'étais sceptique quant à la qualité d'une consultation sans appel vidéo, mais j'ai été bluffé par la précision et la pertinence des conseils reçus. L'Accompagnement Premium a complètement transformé mon approche et m'a permis de générer mes premiers revenus en moins d'un mois."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-name">Sarah M.</div>
+                                <div class="author-business">Créatrice de contenu IA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <h2>Questions fréquentes</h2>
+                    
+                    <div class="faq-item">
+                        <h3>Comment fonctionne la consultation sans appel vidéo?</h3>
+                        <p>Notre système utilise un agent IA avancé qui analyse votre questionnaire détaillé et génère des recommandations personnalisées. Toute la communication se fait par écrit, ce qui vous permet de consulter les informations à votre rythme, sans contrainte de rendez-vous.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Qui analyse mon projet?</h3>
+                        <p>Votre projet est analysé par notre système d'intelligence artificielle spécialement entraîné pour évaluer les business IA. Chaque rapport est vérifié pour garantir sa qualité et sa pertinence avant de vous être envoyé.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Puis-je poser des questions après avoir reçu ma consultation?</h3>
+                        <p>Oui, selon la formule choisie, vous bénéficiez d'un suivi par email pendant 7 à 30 jours pour poser vos questions et obtenir des clarifications sur les recommandations fournies.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Quelle est votre politique de remboursement?</h3>
+                        <p>Nous offrons une garantie satisfait ou remboursé de 14 jours. Si vous n'êtes pas satisfait de votre consultation, contactez-nous et nous vous rembourserons intégralement.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Les consultations sont-elles confidentielles?</h3>
+                        <p>Absolument. Toutes les informations que vous partagez sont strictement confidentielles et ne seront jamais partagées avec des tiers. Nous respectons votre vie privée et la confidentialité de votre projet.</p>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h2>Prêt à transformer votre idée en business IA rentable?</h2>
+                    <p>Obtenez des conseils personnalisés et un plan d'action concret sans avoir à montrer votre visage ou à participer à des appels vidéo.</p>
+                    <div class="cta-buttons">
+                        <button class="cta-button" data-tier="express">Audit Express</button>
+                        <button class="cta-button primary" data-tier="complet">Plan d'Action Complet</button>
+                        <button class="cta-button" data-tier="premium">Accompagnement Premium</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Business IA</h3>
+                    <p>Des solutions innovantes pour créer votre business basé sur l'intelligence artificielle sans compétences techniques et sans budget initial.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="idees.html">Idées Business</a></li>
+                        <li><a href="faisabilite.html">Analyse de Faisabilité</a></li>
+                        <li><a href="ressources.html">Ressources Gratuites</a></li>
+                        <li><a href="strategies.html">Stratégies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Recevez nos conseils et astuces pour réussir avec l'IA</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Business IA Sans Compétences et Sans Budget. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Gestion des boutons de commande
+            const tierButtons = document.querySelectorAll('.tier-button, .cta-button');
+            const consultationForm = document.getElementById('consultation-form');
+            const selectedTierInfo = document.getElementById('selected-tier-info');
+            const backToTiersButton = document.getElementById('back-to-tiers');
+            
+            // Prix des différentes formules
+            const tierPrices = {
+                'express': '49€',
+                'complet': '99€
+(Content truncated due to size limit. Use line ranges to read in chunks)

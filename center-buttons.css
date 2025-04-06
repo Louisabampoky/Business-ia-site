@@ -1,0 +1,45 @@
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center; /* Centrer horizontalement */
+  width: 100%; /* S'assurer que le conteneur prend toute la largeur */
+}
+
+.card {
+  text-align: center; /* Centrer tout le contenu des cartes */
+}
+
+.card .btn {
+  margin: 0 auto; /* Centrer les boutons dans les cartes */
+  display: block; /* Permettre l'application de margin auto */
+}
+
+.cta-box {
+  text-align: center; /* Déjà centré, mais s'assurer que tout est cohérent */
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 500px;
+  margin: 30px auto 0; /* Centrer le formulaire */
+  justify-content: center; /* Centrer les éléments du formulaire */
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center; /* Centrer verticalement en mode colonne */
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    align-items: center; /* Centrer verticalement en mode colonne */
+  }
+  
+  .newsletter-form input[type="email"],
+  .newsletter-form button {
+    width: 100%; /* Prendre toute la largeur disponible */
+    max-width: 300px; /* Limiter la largeur maximale */
+  }
+}

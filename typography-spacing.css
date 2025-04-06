@@ -1,0 +1,280 @@
+/* Optimisation de la typographie */
+:root {
+  /* Typographie */
+  --font-primary: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 17px;
+  --font-size-small: 14px;
+  --font-size-large: 21px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 40px;
+  --font-size-hero: 48px;
+  
+  --line-height-tight: 1.1;
+  --line-height-base: 1.47059;
+  --line-height-relaxed: 1.6;
+  
+  --letter-spacing-tight: -0.015em;
+  --letter-spacing-hero: -0.003em;
+  
+  /* Espacement */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 48px;
+  --spacing-xl: 80px;
+  --spacing-xxl: 120px;
+  
+  /* Marges de section */
+  --section-spacing-top: var(--spacing-xl);
+  --section-spacing-bottom: var(--spacing-xl);
+  
+  /* Espacement des paragraphes */
+  --paragraph-spacing: var(--spacing-md);
+  
+  /* Espacement des titres */
+  --heading-spacing: var(--spacing-md);
+}
+
+/* Typographie raffinée */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: var(--letter-spacing-tight);
+  margin-bottom: var(--heading-spacing);
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-hero);
+  margin-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: var(--font-size-xxl);
+  line-height: var(--line-height-tight);
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: 1.14;
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--paragraph-spacing);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  max-width: 70ch; /* Limite la largeur pour une meilleure lisibilité */
+}
+
+.hero p {
+  font-size: var(--font-size-large);
+  line-height: 1.381;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Optimisation des espacements */
+.section {
+  padding: var(--section-spacing-top) 0 var(--section-spacing-bottom);
+  margin: 0;
+}
+
+.container {
+  padding: 0 var(--spacing-md);
+}
+
+.hero {
+  padding: var(--spacing-xxl) 0 var(--spacing-xl);
+}
+
+.grid {
+  gap: var(--spacing-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.card {
+  padding: 0;
+}
+
+.card-content {
+  padding: var(--spacing-lg);
+}
+
+.feature {
+  padding: var(--spacing-lg);
+}
+
+.testimonial {
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-grid {
+  gap: var(--spacing-xl);
+}
+
+.footer-heading {
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-links li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer-bottom {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+}
+
+/* Espacement des boutons */
+.btn {
+  padding: 12px 24px;
+}
+
+.hero-buttons {
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-md);
+}
+
+/* Espacement des formulaires */
+.newsletter-form {
+  margin-top: var(--spacing-lg);
+  gap: var(--spacing-sm);
+}
+
+/* Espacement des listes */
+ul, ol {
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Espacement des éléments de navigation */
+nav ul {
+  gap: var(--spacing-lg);
+}
+
+/* Ajustements pour les appareils mobiles */
+@media (max-width: 768px) {
+  :root {
+    --font-size-hero: 40px;
+    --font-size-xxl: 32px;
+    --font-size-xl: 24px;
+    --font-size-large: 18px;
+    
+    --section-spacing-top: var(--spacing-lg);
+    --section-spacing-bottom: var(--spacing-lg);
+  }
+  
+  .hero {
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+  }
+  
+  .grid {
+    gap: var(--spacing-md);
+  }
+  
+  .card-content {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --font-size-hero: 32px;
+    --font-size-xxl: 28px;
+    --font-size-xl: 22px;
+    --font-size-base: 16px;
+    
+    --section-spacing-top: var(--spacing-md);
+    --section-spacing-bottom: var(--spacing-md);
+  }
+  
+  .hero {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .card-content {
+    padding: var(--spacing-sm);
+  }
+}
+
+/* Optimisation de la lisibilité */
+.benefits li, .tier-features li {
+  margin-bottom: var(--spacing-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Espacement des FAQ */
+.faq-item {
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+.faq-item h3 {
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Optimisation des prix */
+.price-box {
+  margin: var(--spacing-lg) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+}
+
+.price {
+  font-size: var(--font-size-xxl);
+  margin: var(--spacing-sm) 0;
+}
+
+/* Optimisation des étapes */
+.steps {
+  margin: var(--spacing-xl) 0;
+}
+
+.step {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Optimisation des cartes de tarification */
+.tier-card {
+  padding: var(--spacing-lg);
+}
+
+.tier-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.tier-features ul {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Ajustement des marges négatives pour compenser les espacements */
+.container > h2:first-child,
+.container > h1:first-child {
+  margin-top: 0;
+}
+
+/* Optimisation de l'espacement vertical entre les sections */
+.section + .section {
+  padding-top: 0;
+}
+
+.section.features {
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-xl) 0;
+}

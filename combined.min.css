@@ -1,0 +1,43 @@
+/* Combinaison et minification des fichiers CSS */
+
+/* Reset et styles de base */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display",system-ui,sans-serif;line-height:1.5;color:#1d1d1f;background-color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{max-width:100%;height:auto}a{color:#0066cc;text-decoration:none;transition:color .3s ease}a:hover{color:#0077ed}ul,ol{list-style:none}button{background:none;border:none;cursor:pointer;font-family:inherit}
+
+/* Layout et conteneurs */
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}.section{padding:80px 0;position:relative}@media (max-width:768px){.section{padding:60px 0}}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}@media (max-width:768px){.grid{grid-template-columns:1fr}}
+
+/* Header et navigation */
+header{position:sticky;top:0;background-color:rgba(255,255,255,.8);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);z-index:100;border-bottom:1px solid rgba(0,0,0,.1)}.header-container{display:flex;justify-content:space-between;align-items:center;height:60px}.logo{font-size:24px;font-weight:600;color:#1d1d1f}nav ul{display:flex;gap:30px}nav a{color:#1d1d1f;font-weight:500;position:relative;padding:5px 0}nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:100%;height:2px;background-color:#0066cc;transform:scaleX(0);transition:transform .3s ease}nav a:hover::after,nav a.active::after{transform:scaleX(1)}
+
+/* Menu mobile */
+.mobile-menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;padding:0}@media (max-width:768px){.mobile-menu-toggle{display:flex}nav{position:fixed;top:60px;left:0;width:100%;height:0;background-color:#fff;overflow:hidden;transition:height .3s ease;box-shadow:0 10px 20px rgba(0,0,0,.1)}nav.open{height:auto}nav ul{flex-direction:column;gap:0;padding:20px}nav a{display:block;padding:15px 20px;border-bottom:1px solid rgba(0,0,0,.1)}}.mobile-menu-toggle span{display:block;width:100%;height:2px;background-color:#1d1d1f;transition:all .3s ease}
+
+/* Typographie et espacement */
+h1,h2,h3,h4,h5,h6{font-weight:600;line-height:1.2;margin-bottom:20px;color:#1d1d1f}h1{font-size:48px;letter-spacing:-.02em}@media (max-width:768px){h1{font-size:36px}}h2{font-size:36px;letter-spacing:-.01em;margin-bottom:30px}@media (max-width:768px){h2{font-size:28px}}h3{font-size:24px;margin-bottom:15px}p{margin-bottom:20px;font-size:18px;color:#424245}.section p:first-of-type{font-size:20px;color:#1d1d1f;margin-bottom:40px}@media (max-width:768px){.section p:first-of-type{font-size:18px;margin-bottom:30px}}
+
+/* Boutons et CTA */
+.btn{display:inline-block;padding:12px 24px;background-color:#0066cc;color:#fff;border-radius:30px;font-weight:500;text-align:center;transition:all .3s ease}.btn:hover{background-color:#0077ed;color:#fff;transform:translateY(-2px)}.btn-secondary{background-color:transparent;color:#0066cc;border:1px solid #0066cc}.btn-secondary:hover{background-color:rgba(0,102,204,.1);color:#0066cc}.hero-buttons{display:flex;gap:15px;margin-top:30px}@media (max-width:768px){.hero-buttons{flex-direction:column}}
+
+/* Sections spécifiques */
+.hero{padding:120px 0;text-align:center;background-color:#f5f5f7}@media (max-width:768px){.hero{padding:80px 0}}.features{background-color:#f5f5f7}.feature{text-align:center;padding:30px}.feature-icon{font-size:36px;margin-bottom:20px}.cta-box{background-color:#f5f5f7;text-align:center;padding:80px 0}
+
+/* Cartes et conteneurs */
+.card{background-color:#fff;border-radius:20px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease;box-shadow:0 10px 30px rgba(0,0,0,.05)}.card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.1)}.card-content{padding:30px}.price-box{margin:20px 0;font-weight:600}.price{font-size:24px;color:#1d1d1f;display:block}.price-period{font-size:14px;color:#86868b;display:block;margin-top:5px}
+
+/* Témoignages */
+.testimonial{background-color:#f5f5f7;border-radius:20px;padding:30px;margin-bottom:30px}.testimonial-content{font-style:italic;margin-bottom:15px}.testimonial-author{font-weight:600;color:#1d1d1f}
+
+/* Formulaires */
+.newsletter-form{display:flex;max-width:500px;margin:30px auto 0}@media (max-width:768px){.newsletter-form{flex-direction:column}}input[type="email"]{flex:1;padding:12px 20px;border:1px solid #d2d2d7;border-radius:30px 0 0 30px;font-size:16px;outline:none}@media (max-width:768px){input[type="email"]{border-radius:30px;margin-bottom:10px}}.newsletter-form button{padding:12px 24px;background-color:#0066cc;color:#fff;border:none;border-radius:0 30px 30px 0;font-weight:500;cursor:pointer}@media (max-width:768px){.newsletter-form button{border-radius:30px}}
+
+/* Pied de page */
+footer{background-color:#f5f5f7;padding:60px 0 30px;border-top:1px solid rgba(0,0,0,.1)}.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:40px}.footer-heading{font-weight:600;margin-bottom:20px}.footer-links li{margin-bottom:10px}.footer-bottom{text-align:center;padding-top:30px;border-top:1px solid rgba(0,0,0,.1);font-size:14px;color:#86868b}
+
+/* Éléments de monétisation */
+.tier-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;margin:40px 0}@media (max-width:768px){.tier-cards{grid-template-columns:1fr}}.tier-card{background-color:#fff;border-radius:20px;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease;box-shadow:0 10px 30px rgba(0,0,0,.05);position:relative}.tier-card.featured{transform:scale(1.05);box-shadow:0 20px 40px rgba(0,0,0,.1);z-index:1}@media (max-width:768px){.tier-card.featured{transform:scale(1)}}.tier-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,.1)}.tier-header{padding:30px;background-color:#f5f5f7;text-align:center;position:relative}.popular-tag{position:absolute;top:10px;right:10px;background-color:#0066cc;color:#fff;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:600}.tier-features{padding:30px}.tier-features ul{list-style:none;margin:0;padding:0}.tier-features li{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.05);position:relative;padding-left:25px}.tier-features li:before{content:'✓';position:absolute;left:0;color:#0066cc;font-weight:bold}.tier-button{display:block;width:calc(100% - 60px);margin:0 30px 30px;padding:12px 24px;background-color:#0066cc;color:#fff;border:none;border-radius:30px;font-weight:500;cursor:pointer;transition:all .3s ease}.tier-button:hover{background-color:#0077ed;transform:translateY(-2px)}
+
+/* Responsive design */
+@media (max-width:1024px){.container{padding:0 40px}}@media (max-width:768px){.container{padding:0 20px}h1{font-size:36px}h2{font-size:28px}h3{font-size:22px}.hero{padding:80px 0}.section{padding:60px 0}.grid{gap:20px}}@media (max-width:480px){h1{font-size:32px}h2{font-size:24px}h3{font-size:20px}.hero-buttons{flex-direction:column}.btn{width:100%}}
+
+/* Mise à jour du fichier CSS combiné pour inclure les styles des pages légales */
+@import url('legal-pages.css');

@@ -1,0 +1,77 @@
+backend:
+  name: github
+  repo: bemart-limited/business-ia-site
+  branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "home"
+        label: "Page d'accueil"
+        file: "index.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Contenu principal", name: "body", widget: "markdown"}
+      
+      - name: "idees"
+        label: "Page Idées"
+        file: "idees.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      
+      - name: "ebook"
+        label: "Page Ebook"
+        file: "ebook.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Prix", name: "price", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      
+      - name: "consultation"
+        label: "Page Consultation"
+        file: "consultation.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+  
+  - name: "legal"
+    label: "Pages légales"
+    files:
+      - name: "mentions-legales"
+        label: "Mentions légales"
+        file: "mentions-legales.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      
+      - name: "cgv"
+        label: "CGV"
+        file: "cgv.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      
+      - name: "cgu"
+        label: "CGU"
+        file: "cgu.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
+      
+      - name: "politique-confidentialite"
+        label: "Politique de confidentialité"
+        file: "politique-confidentialite.html"
+        fields:
+          - {label: "Titre", name: "title", widget: "string"}
+          - {label: "Contenu", name: "body", widget: "markdown"}
